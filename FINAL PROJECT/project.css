@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Pacifico&family=Protest+Revolution&family=Roboto:wght@700&display=swap');
+
+;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    padding: 0% 15%;
+    height: 5rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lefthead{
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centhead{
+    display: flex;
+    gap: 1.2rem;
+    font-size: 17px;
+    transform: color 0.1s;
+}
+
+.centhead:hover{
+    color: var(white);
+}
+
+h3{
+    font-size: 30px;
+    /* font: bolder; */
+}
+
+.righthead{
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(82, 27, 212);
+    color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    width: 70%;
+    margin: 4rem;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+.lefthero{
+    width: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    /* animation: all 1s linear 0s ; */
+    animation: slideInLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+      transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.righthero{
+    width: 50%;
+}
+
+.intro{
+    color: blueviolet;
+}
+
+.start{
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(82, 27, 212);
+    color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tour{
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lowhero{
+    display: flex;
+    margin-top: 2rem;
+    justify-content:start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.righthero img{
+    border-radius: 20px;
+}
+
+.trash{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font:bold;
+}
+
+.grbx{
+    height: 4rem;
+    width: 50%;
+    border-radius: 8px;
+    background-color: #cdc9c9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grbx p{
+    font-size: 22px;
+}
+
+.main{
+    background-color: #cdc9c9;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.deep{
+
+}
+
+.deep h3{
+    text-align: center;
+}
+
+.deep p{
+    text-align: center;
+}
+
+
+.grid1{
+    width: 50%;
+    gap: 2.5rem;
+  display: grid;
+  grid-template-areas: 
+    "item1 item2" 
+    "item3 item4"
+    "item5 item6"
+     ;
+}
+
+#item1{
+    grid-area: item1;
+    background-color: #44bfc3;
+}
+
+#item2{
+    grid-area: item2;
+    background-color: #ff6289;
+}
+
+#item3{
+    grid-area: item3;
+    background-color: #fcbf58;
+}
+
+#item4{
+    grid-area: item4;
+    background-color: #44bfc3;
+}
+
+#item5{
+    grid-area: item5;
+    background-color: #71bf55;
+}
+
+#item6{
+    grid-area: item6;
+    background-color: #7d79b0;
+}
+
+.grid1 img{
+    width: 15%;
+    height: 15%;
+    border-radius: 100%;
+}
+
+.item{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s linear 0s;
+}
+
+.item:hover{
+    transform: scale(1.1);
+}
+
+.others{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedbox{
+    width: 65%;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.photo img{
+    padding: 8px;
+    height: 30%;
+    width: 50px;
+}
+
+.feed1{
+    border: 1px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear 0s;
+}
+
+.feed1:hover{
+    transform: scale(1.2);
+}
+
+.tutor{
+    color: rgb(82, 27, 212);
+    font-weight: bold;
+}
+
+.comment{
+    text-align: center;
+    padding: 10px;
+}
+
+.role{
+    padding-bottom: 10px;
+}
+
+.subscribe{
+    background-color: #cdc9c9;
+    margin: 2rem;
+    padding: 0px;
+    width: 65%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftsub{
+    width: 50%;
+    height: 100%;
+    
+}
+
+.subscribe img{
+    width: 100%;
+    height: 102%;
+}
+
+.rightsub{
+    width: 50%;
+    height: 100%;
+    padding: 25px;
+    margin: 10px;
+}
+
+.rightsub h1{
+    color: rgb(82, 27, 212);
+}
+
+.news{
+    margin: 5px;
+    display: flex;
+    gap: 2rem;
+}
+
+.send{
+    padding: 0px 7px;
+}
+
+button{
+    background-color: rgb(82, 27, 212);
+    width: 4rem;
+    color: white;
+}
